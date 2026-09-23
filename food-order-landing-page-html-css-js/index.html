@@ -1,122 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-    <link rel="stylesheet" href="ministyle.css">
-</head>
-
-<body>
-    <nav>
-        <div class="Navbar">
-            <h3>Logo</h3>
-            <div class="Nav-links">
-                <ul>
-                    <a href="#" class="custom-underline">Menu</a>
-                    <a href="#" class="custom-underline">Order</a>
-                    <a href="#" class="custom-underline">Restaurants</a>
-                    <a href="#" class="custom-underline">Track Order</a>
-                </ul>
-            </div>
-            <div class="right">
-
-                <div class="Search">
-                    <input type="text" placeholder="Search Restaurants, Cuisines and Dishes">
-                    <button class="icon"><i class="fa fa-search" aria-hidden="true"></i></button>
-
-                </div>
-                <i class="fa fa-shopping-cart cart"></i>
-            </div>
-
-
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fresh food ordering and restaurant discovery." />
+    <title>Food Order Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#" aria-label="Food order home">
+          <img src="img/logo.png" alt="" />
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links" id="main-nav" aria-label="Main navigation">
+          <a href="#menu">Menu</a><a href="#order">Order</a><a href="#restaurants">Restaurants</a><a href="#track-order">Track Order</a>
+        </nav>
+        <div class="nav-actions">
+          <label class="search-box" aria-label="Search restaurants">
+            <input type="search" placeholder="Search Restaurants, Cuisines and Dishes" />
+            <button type="button" aria-label="Search"><i class="fa fa-search"></i></button>
+          </label>
+          <button class="cart-button" type="button" aria-label="Shopping cart"><i class="fa fa-shopping-cart"></i></button>
+          <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Enable neon dark theme"><i class="fa fa-moon"></i></button>
         </div>
-    </nav>
-    <section class="first">
-        <div class="Text">
-            <h1>
-                Eat The Best
-            </h1>
-            <p>Explore and understand the culture more by tasting the amazing dishes of that culture</p>
-            <div class="Searchf1">
-                <input type="text" placeholder="Search Restaurants, Cuisines and Dishes">
-                <button class="icon">
-                    <i class="fa-solid fa-crosshairs" aria-hidden="true"></i>
-                </button>
-            </div>
-            <div class="buttons">
-                <button class="btn1">Order Now</button>
-                <div><span>or</span></div>
-                <button class="btn2">Explore Menu</button>
+      </div>
+    </header>
 
+    <main>
+      <section class="hero" id="menu">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Fresh &amp; flavorful</p>
+            <h1>Eat The Best</h1>
+            <p class="lead">Explore and understand the culture more by tasting the amazing dishes of that culture.</p>
+            <div class="hero-search">
+              <input type="search" placeholder="Search Restaurants, Cuisines and Dishes" />
+              <button type="button" aria-label="Search meals"><i class="fa-solid fa-crosshairs"></i></button>
             </div>
+            <div class="cta-row">
+              <button class="btn btn-primary" type="button">Order Now</button><span class="or">or</span><button class="btn btn-secondary" type="button">Explore Menu</button>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+            <img class="food food-biryani" src="img/hero-biryani.png" alt="Biryani" />
+            <img class="food food-burger" src="img/hero-burger.png" alt="Burger" />
+            <img class="food food-pizza" src="img/hero-pizza.png" alt="Pizza" />
+            <article class="review-card">
+              <div class="review-header"><div class="review-avatar"><img src="img/user-1.png" alt="Customer portrait" /></div><div class="review-meta"><span class="stars">★★★★★</span><h3>Deep</h3></div></div>
+              <div class="review-body"><span class="quote"><i class="fas fa-quote-left"></i></span><p>The restaurant was good. Staff was very welcoming and the food... no words for it. Chef was amazing and the view of the sky from the top deck was fabulous.</p></div>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <div class="images">
-            <div class="ellipse">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
-            <div class="ellipse">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
-            <div class="ellipse">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
-            <div>
-                <img class="hero-img" src="./img/hero-biryani.png" alt="">
-                <img class="hero-img" src="./img/hero-burger.png" alt="">
-                <img class="hero-img" src="./img/hero-pizza.png" alt="">
-            </div>
-            <div class="user">
-                <div class="user-nav">
-                    <div class="user-img">
-                        <div class="imgu"><img src="./img/user-1.png" alt=""></div>
-                    </div>
-
-                    <div class="user-det">
-                        <div class="stars">stars</div>
-                        <h5>Deep</h5>
-                    </div>
-
-
-                </div>
-                <div class="review">
-                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                    <p>The restaurant was good. Staff was very welcoming and the food.... well no words for it. Chef
-                        was amazing and the view of sky from the top deck was fabulous.</p>
-                </div>
-            </div>
+      <section class="feature-band" id="order">
+        <div class="container feature-inner">
+          <div class="feature-visual"><img src="img/section2.png" alt="Chef prepared platter" /></div>
+          <div class="feature-copy"><span class="pill">From professional chef</span><h2>1000+</h2><p>Order from our 1000+ food and beverages menu. Food for every taste and mood.</p><button class="btn btn-secondary" type="button">Order Food</button></div>
         </div>
-    </section>
-    <section class="second">
- <!-------------- Second Image -->
-        <div class="imagesse">
-            <img src="./img/section2.png" alt="">
+      </section>
+
+      <section class="popular-dishes" id="restaurants">
+        <div class="container section-header"><div><p class="section-label">Popular dishes</p><h2>Trending meals</h2></div><a class="view-all" href="#">View all</a></div>
+        <div class="container card-grid">
+          <article class="dish-card"><img src="img/restaurant-1.png" alt="Fresh salad bowl" /><div class="dish-content"><h3>Fresh Salad Bowl</h3><p>Healthy • 25 min</p><div class="dish-footer"><span class="price">$18</span><button type="button">Order now</button></div></div></article>
+          <article class="dish-card"><img src="img/restaurant-2.png" alt="Grilled chicken" /><div class="dish-content"><h3>Grilled Chicken</h3><p>Protein • 20 min</p><div class="dish-footer"><span class="price">$22</span><button type="button">Order now</button></div></div></article>
+          <article class="dish-card"><img src="img/restaurant-3.png" alt="Seafood platter" /><div class="dish-content"><h3>Seafood Platter</h3><p>Fresh • 30 min</p><div class="dish-footer"><span class="price">$28</span><button type="button">Order now</button></div></div></article>
+          <article class="dish-card"><img src="img/restaurant-4.png" alt="Cheese pasta" /><div class="dish-content"><h3>Cheese Pasta</h3><p>Italian • 18 min</p><div class="dish-footer"><span class="price">$19</span><button type="button">Order now</button></div></div></article>
+          <article class="dish-card"><img src="img/restaurant-5.png" alt="Deluxe burger" /><div class="dish-content"><h3>Deluxe Burger</h3><p>Burger • 15 min</p><div class="dish-footer"><span class="price">$17</span><button type="button">Order now</button></div></div></article>
+          <article class="dish-card"><img src="img/restaurant-6.png" alt="Dessert platter" /><div class="dish-content"><h3>Dessert Mix</h3><p>Sweets • 12 min</p><div class="dish-footer"><span class="price">$16</span><button type="button">Order now</button></div></div></article>
         </div>
+      </section>
 
-        </div>
-<!--------------- Second Text -->
-        <div class="Textse">
-            <div class="Box"><h5>From professional chef</h5></div>
-            <h1>1000+</h1>
-            <p>Order from our 1000+ food and beverages menu. Food for every taste and mood. </p>
-            <button>Order Food</button>
-        </div>
+      <section class="story"><div class="container story-inner"><div class="story-visual"><img src="img/side-dish.png" alt="Delicious meal platter" /></div><div class="story-copy"><span class="pill alt">Why us</span><h2>We bring the best to your table</h2><p>We partner with trusted kitchens and deliver meals prepared with care, beautiful presentation, and a local touch that feels personal.</p><ul class="feature-list"><li><i class="fa fa-check-circle"></i> Fresh ingredients every day</li><li><i class="fa fa-check-circle"></i> Quick delivery from nearby kitchens</li><li><i class="fa fa-check-circle"></i> Best-in-class customer support</li></ul><button class="btn btn-secondary" type="button">Order Food</button></div></div></section>
 
-    </section>
+      <section class="faq" id="track-order"><div class="container faq-inner"><div class="faq-heading"><p class="section-label">Customer help</p><h2>Frequently Asked Questions</h2></div><div class="faq-list">
+        <div class="faq-item open"><button type="button" aria-expanded="true"><span>How long does it take to deliver?</span><i class="fa fa-plus"></i></button><div class="faq-answer">Most orders arrive within 20 to 35 minutes depending on your area and time.</div></div>
+        <div class="faq-item"><button type="button" aria-expanded="false"><span>Can I order for a group?</span><i class="fa fa-plus"></i></button><div class="faq-answer">Yes, our restaurant partners can prepare larger family-size orders and platters.</div></div>
+        <div class="faq-item"><button type="button" aria-expanded="false"><span>Do you offer vegetarian meals?</span><i class="fa fa-plus"></i></button><div class="faq-answer">Absolutely. We feature a wide mix of vegetarian, vegan, and protein-rich dishes.</div></div>
+      </div></div></section>
 
+      <section class="download-app"><div class="container app-wrap"><div class="phone-visual"><img src="img/app.png" alt="Mobile app preview" /></div><div class="app-copy"><p class="section-label">Mobile app</p><h2>Make orders from your phone</h2><p>Download the app for easy ordering, special deals, and new menu drops delivered to your fingertips.</p><div class="store-buttons"><a class="store-button" href="#"><img src="img/play-store.png" alt="Google Play" /><span>Get it on</span><strong>Google Play</strong></a><a class="store-button" href="#"><img src="img/app-store.png" alt="App Store" /><span>Download on the</span><strong>App Store</strong></a></div></div></div></section>
+      <section class="promo-banner"><div class="container banner-wrap"><p>Get an extra 20% off on your first order.</p><button class="btn btn-light" type="button">Get started</button></div></section>
+    </main>
 
-</body>
-
+    <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><img src="img/footer-logo.png" alt="Footer logo" /><p>Fresh food for every craving.</p></div><div><h3>Company</h3><ul><li><a href="#">About us</a></li><li><a href="#">Our chefs</a></li><li><a href="#">Careers</a></li></ul></div><div><h3>Support</h3><ul><li><a href="#">Help center</a></li><li><a href="#">Privacy policy</a></li><li><a href="#">Terms</a></li></ul></div><div><h3>Follow us</h3><div class="socials"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a></div></div></div><div class="container footer-bottom"><p>© 2026 Logo. All rights reserved.</p></div></footer>
+  </body>
 </html>
